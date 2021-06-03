@@ -5,6 +5,7 @@ const imageSchema= mongoose.Schema(
         variety:String,
         gender:String,
         age:String,
+        process:String,
         price:String,
         colour:String,
         description:String,
