@@ -122,6 +122,7 @@ router.post('/upload', upload.single('myFile'), async(req, res, next) => {
         category:req.body.category,
         variety:req.body.variety,
         gender:req.body.gender,
+        process:req.body.process,
         age:req.body.age,
         price:req.body.price,
         colour:req.body.colour,
@@ -177,7 +178,7 @@ router.post('/upload', upload.single('myFile'), async(req, res, next) => {
  
      })
      
-     router.get('/productfilter/:category',function( req, res)  {
+     router.get('/productfilter/:process/:category',function( req, res)  {
         
          
         
